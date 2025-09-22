@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="Login.css">
+    <link rel="icon" href="icons/nike-logo2.png" type="image/png">
+</head>
+<body>
+    
+    <div class="Wrapper">
+        <header class = "Header">
+            <div class="Logo">
+                <img src="icons/nike-logo2.png" alt="" id="Logo" #Logo>
+            </div>
+            <div class="Jordan-Logo">
+                <img src="icons/jordan-logo.png" alt="Jordan-Logo">
+            </div>
+
+        </header>
+
+        <section class = "Intro">
+            <h2>Enter your email to join us</h2>
+            <h4>South Africa</h4>
+        </section>
+        <section class="Form">
+            <form action="" id="LoginForm">
+            <div class="name-group error1">
+                <label for="Name">Name<span>*</span></label>
+                <input type="Name" id="Name" name="Name" required>
+                <p class="error-message1">Required</p>
+            </div>
+
+            <div class="form-group error">
+                <label for="email">Email<span>*</span></label>
+                <input type="email" id="email" name="email" required>
+                <p class="error-message">Required</p>
+            </div>
+            <div class="password-group error">
+                <label for="password">Password<span>*</span></label>
+                <input type="password" id="password" name="password" required>
+                 <button type="button" id="togglePassword" aria-label="Show password">View Password</button>
+                <p class="error-message2">Required</p>
+            </div>
+
+            <button type="submit" id="btnSubmit" > Join Us</button>
+            </form>
+
+
+        </section>
+
+
+    </div>    
+    <script src="js/Login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  emailjs.init("kTCjl1rQgsXd9oStJ"); // Replace with your actual public key from EmailJS
+</script>
+
+</body>
+</html>

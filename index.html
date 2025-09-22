@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="icons/nike-logo2.png" type="image/png">
+
+</head>
+<body>
+    <div class="Wrapper">
+        <div class="Menu1"> 
+            <div class="Exit"><img src="icons/close.png" alt=""></div>
+            <div class="LoggedIn"><img src="icons/user.png" alt=""> <span id="Username1">Not Logged in </span> <img src="icons/arrow.png" alt="" id="LoginArrow"></div>
+            <div class="Clothing">Clothing <img src="icons/arrow.png" alt="" id="MenuArrow"></div>
+            <div class="Shoes">Shoes <img src="icons/arrow.png" alt="" id="MenuArrow"></div>
+            <div class="Sportswear">Sportswear <img src="icons/arrow.png" alt="" id="MenuArrow"></div>
+            <div class="Equipment">Equipment <img src="icons/arrow.png" alt="" id="MenuArrow"></div>
+            <div class="Jordan">Jordan <img src="icons/jordan-logo.png" alt="" id="MenuArrow"></div>
+            <div class="MenuCart">Bag <img src="icons/add-cart.png" alt="" id="MenuArrow"></div>
+        </div>
+        <div class="MenuClothing"> 
+            <div class="Exit2"><span id="Clothing2Menu">↩Back</span><img src="icons/close.png" alt="" id="Exit2"></div>
+            <div class="ClothingMenuStyling" id="ClothingPageEnter">Hoodies & sweatshirts <img src="icons/arrow.png" alt="" id="MenuArrow"></div>
+            <div class="ClothingMenuStyling" id="ShortsPageEnter">Shorts <img src="icons/arrow.png" alt="" id="MenuArrow"></div>
+            <div class="ClothingMenuStyling" id="JacketsPageEnter">Jackets<img src="icons/arrow.png" alt="" id="MenuArrow"></div>
+            <div class="ClothingMenuStyling" id="AccessoriesPageEnter">Accessories <img src="icons/arrow.png" alt="" id="MenuArrow"></div>
+            <div class="ClothingMenuStyling" id="TrousersPageEnter">Trousers <img src="icons/arrow.png" alt="" id="MenuArrow"></div>
+            <div class="ClothingMenuStyling" id="TopsPageEnter">Tops & T-Shirts<img src="icons/arrow.png" alt="" id="MenuArrow"></div> 
+        </div>
+         <div class="SportswearMenu"> 
+            <div class="Exit3"><span id="Sportswear2Menu">↩Back</span><img src="icons/close.png" alt="" id="Exit3"></div>
+            <div class="ClothingMenuStyling" id="FootballOption">Football<img src="icons/arrow.png" alt="" id="MenuArrow" ></div>
+            <div class="ClothingMenuStyling" id="RunningShoes">Running<img src="icons/arrow.png" alt="" id="MenuArrow"></div>
+            <div class="ClothingMenuStyling" id="BasketballShoes">Basketball<img src="icons/arrow.png" alt="" id="MenuArrow"></div>
+            <div class="ClothingMenuStyling" id="GymShoes">Gym<img src="icons/arrow.png" alt="" id="MenuArrow"></div>
+            
+        </div>
+        <header id="Header">
+            <div class="Logo">
+            <img src="icons/nike-logo2.png" alt="" id="Logo" #Logo>
+            </div>
+            <div class="Nav">
+                <li><img src="icons/add-cart.png" alt="" id="Cart"></li>
+                <li><img src="icons/user.png" alt="" id="User"></li>
+                <li><img src="icons/menu.png" alt="" id="Menu"></li>
+            </div>
+        </header>
+        <Section class="Section1">
+           <img src="Backgrounds/wallpaper2you_130297.jpg" alt=""> 
+           <button id="btnShopRunning">Shop</button>
+        </Section>
+        <section class="Section2">
+            <img src="Backgrounds/RonaldoJustDoIt.jpg" alt="">
+            <button id="btnShopFootball">Shop</button>
+
+        </section>
+        <section class="Section3">
+            <img src="Backgrounds/basketball2.jpg" alt="">
+            <button id="btnShopBasketball">Shop</button>
+
+        </section>
+        <section class="Section5">
+            <div class="Shoe1" id="Shoe1">
+                <img src="Shoes/AirForce-removebg-preview.png" alt="">
+                <div class="ImageNav">
+                <a href="#Shoe2">→</a>
+                 </div>
+            </div>
+            <div class="Shoe2" id="Shoe2">
+                <img src="Shoes/AirMaxPlus1-removebg-preview.png" alt="">
+                <div class="ImageNav">
+                <a href="#Shoe1">←</a>
+                <a href="#Shoe3">→</a>
+            </div>
+
+            </div>
+            <div class="Shoe3" id="Shoe3" >
+                <img src="Shoes/97-removebg-preview.png" alt="">
+                <div class="ImageNav">
+                <a href="#Shoe2">←</a>
+            </div>
+
+            </div>
+        </section>
+        <Section6 class="Section6">
+            <h2>Get Info</h2>
+            <ul class="Accordion">
+                <li>
+                    <input type="radio" id="Help" name="Help" checked >
+                    <label for="Help">Help</label>
+                    <div class="Content1" id="HelpContent">
+                        <ul>
+                            <li id="GetHelp">Get Help</li>
+                            <li id="ContactUs">Contact Us</li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <input type="radio" id="Resources" name="Resources">
+                    <label for="Resources">Resources</label>
+                    <div class="Content2" id="ResourcesContent">
+                        <ul>
+                            <li id="AboutNike">About Nike</li>
+                        </ul>
+                    </div>
+                </li>
+
+
+            </ul>
+
+        </Section6>
+        <footer class="Footer">
+            © 2025 Nike, inc. All Rights Reserved
+        </footer>
+
+    </div>
+    <script src ="js/script.js" defer></script>
+</body>
+</html>

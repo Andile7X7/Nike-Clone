@@ -1,0 +1,138 @@
+html , body{
+    padding: 0;
+    margin: 0;
+}
+.Wrapper{
+    position: relative;
+    max-width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    overflow-y: auto;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto 1fr auto auto;
+    grid-template-areas: 
+    "Header Header"
+    "Intro Intro"
+    "Bag Bag"
+    "Total Total"
+    "Footer Footer"
+    ;
+}
+.Total{
+    grid-area: Total;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%;
+    font-size: xx-large;
+    font-weight: 900;
+}
+
+.Intro{
+    grid-area: Intro;
+}
+.Intro h2{
+    margin-left: 5%;
+}
+#Header{
+    grid-area: Header;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto ;
+    grid-template-areas:
+    "Logo Nav"
+    ;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+
+}
+.Bag {
+    grid-area: Bag;
+    display: flex;
+    flex-direction: column;
+}
+.Footer{
+    grid-area:Footer;
+    padding: 5%;
+    text-align: center;
+}
+#Header  #Logo{
+    transform: scale(0.4);
+    
+}
+.Nav li {
+    display: inline-block;
+    list-style: none;
+    padding: 3%;
+}
+.Nav li img{
+    transform: scale(0.7);
+}
+.Nav{
+    grid-area: Nav;
+    display: flex;
+    justify-content: right;
+}
+.Logo{
+    grid-area: Logo;
+}
+.Placeholder{
+    width: 100vw;
+    height: 35vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "Image Description"
+    ;
+}
+
+#ProductImage{
+    width: 80%;
+    height: 62.5;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.Image{
+    grid-area: Image;
+}
+.Description{
+    grid-area: Description;
+    display:flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-left:15% ;
+    transform: translateY(25%);
+}
+span{
+    margin-bottom: 7%;
+    font-size: large;
+}
+#ProductPrice{
+    font-weight: bolder;
+    font-size: x-large;
+}
+@media (max-width:400px){
+ .Description{
+    transform: translateY(10%);  
+ }
+}
+@media (min-width:720px) and (max-width:900px){
+    #ProductImage{
+        width: 80%;
+    }
+}
+@media (min-width:902px){
+   .Placeholder{
+    height: 45vh;
+   }
+   .Image{
+    width: 30%;
+    aspect-ratio: 4/5;
+    margin-left: 20%;
+    margin-top: 5%;
+   }
+   
+
+}

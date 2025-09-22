@@ -1,0 +1,53 @@
+html, body{
+    padding: 0;
+    margin:0;
+    gap:0;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+    "Header Header"
+    "Mission Mission"
+    "Description Description"
+    "Footer Footer"
+    ;
+}
+
+.Header{
+
+    display: flex;
+    justify-content: center;
+    background-color: black !important;
+    color: White;
+    grid-area: Header;
+    
+}
+.Mission{
+    background-color: black !important;
+    color: White;
+    height: 90vh;
+    grid-area: Mission;
+}
+.Mission h4{
+   text-align: center;
+}
+.Mission h1{
+    text-align: center;
+}
+.Mission h3{
+    text-align: center;
+}
+.Description{
+    grid-area: Description;
+    height: 80vh;
+}
+.Description p{
+    margin-left: 10% ;
+    font-size: x-large;
+}
+.Footer{
+    grid-area:Footer;
+    padding: 5%;
+    text-align: center;
+}
