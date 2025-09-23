@@ -1,8 +1,8 @@
 let MainMenuVisible = false;
 console.log("Script Running");
 console.log(MainMenuVisible);
-const bag = [];
-const Cart = [];
+let bag = JSON.parse(localStorage.getItem('bag')) || [];
+
 localStorage.setItem("bagArray", JSON.stringify(bag))
 localStorage.setItem("CartArray", JSON.stringify(Cart));
 
@@ -201,4 +201,5 @@ if(document.getElementById("AboutNike")){
     document.getElementById("AboutNike").addEventListener("click", function(){
         window.location.href = "AboutNike.html"
     })
+
 }
