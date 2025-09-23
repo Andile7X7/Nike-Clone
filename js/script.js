@@ -1,7 +1,7 @@
 let MainMenuVisible = false;
 console.log("Script Running");
 console.log(MainMenuVisible);
-let bag = JSON.parse(localStorage.getItem('bag')) || [];
+let Cart = JSON.parse(localStorage.getItem('CartArray')) || [];
 
 localStorage.setItem("bagArray", JSON.stringify(bag))
 localStorage.setItem("CartArray", JSON.stringify(Cart));
@@ -203,3 +203,4 @@ if(document.getElementById("AboutNike")){
     })
 
 }
+
