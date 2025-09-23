@@ -149,4 +149,14 @@ document.getElementById("FootballOption").addEventListener("click", function(){
 
 document.getElementById("Cart").addEventListener("click", function(){
     window.location.href = "Bag.html"
+
+})
+document.getElementById("RunningShoes").addEventListener("click", function(){
+    window.location.href = "Running.html"
+})
+document.getElementById("GymShoes").addEventListener("click", function(){
+    window.location.href = "Gym.html"
+})
+document.getElementById("BasketballShoes").addEventListener("click", function(){
+    window.location.href = "Basketball.html"
 })
