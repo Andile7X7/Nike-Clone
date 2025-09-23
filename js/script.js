@@ -3,8 +3,6 @@ console.log("Script Running");
 console.log(MainMenuVisible);
 let Cart = JSON.parse(localStorage.getItem('CartArray')) || [];
 
-localStorage.setItem("bagArray", JSON.stringify(bag))
-localStorage.setItem("CartArray", JSON.stringify(Cart));
 
 //Main Menu
  let DisplayedMenu = document.querySelector(".Menu1");
@@ -203,4 +201,5 @@ if(document.getElementById("AboutNike")){
     })
 
 }
+
 
